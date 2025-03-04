@@ -4,7 +4,6 @@ from streamlit_lottie import st_lottie
 import requests
 import glob
 import os
-import fontawesome as fs
 
 st.set_page_config(page_title="Puram Nagendra", page_icon=":material/all_inclusive:", layout="wide")
 
