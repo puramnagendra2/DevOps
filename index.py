@@ -5,7 +5,7 @@ import requests
 import glob
 import os
 
-st.set_page_config(page_title="Puram Nagendra", page_icon=":material/all_inclusive:", layout="wide")
+st.set_page_config(page_title="DevOps Discussed", page_icon=":material/all_inclusive:", layout="wide")
 
 # Functions
 
@@ -25,8 +25,10 @@ def load_latest_blogs(menu):
     blog_files = sorted(glob.glob(os.path.join(BLOG_DIR+"/"+menu, "*.md")), key=os.path.getmtime, reverse=True)
     return blog_files
 
+
 # Heading
 st.title(":blue[:material/all_inclusive: DevOps Discussed]")
+st.markdown("<h5 style='color: #0068C9; margin-left: 230px;'>By Puram Nagendra</h5>", unsafe_allow_html=True)
 
 
 menu = option_menu(menu_title=None,
